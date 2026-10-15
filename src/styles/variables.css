@@ -1,0 +1,22 @@
+:root {
+  --size-primary: 20px;
+  --size-secondary: 24px;
+
+  --line-height-primary: 24px;
+  --line-height-secondary: 32px;
+
+  --color-primary: rgba(245, 244, 244, 1);
+  --color-secondary: rgba(112, 112, 112, 1);
+
+  --border-radius: 8px;
+  --background: rgba(245, 244, 244, 0.4);
+
+  --gap-8: 8px;
+  --gap-16: 16px;
+  --gap-64: 64px;
+
+  --padding-8: 8px;
+  --padding-12: 12px;
+  --padding-16: 16px;
+  --padding-32: 32px;
+}

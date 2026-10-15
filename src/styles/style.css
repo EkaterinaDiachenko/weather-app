@@ -1,0 +1,131 @@
+.page {
+  min-width: 1280px;
+
+  font-family: "Raleway", sans-serif;
+  font-size: var(--size-primary);
+  line-height: var(--line-height-primary);
+  color: var(--color-primary);
+
+  background-image: url("../../public/weather-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  margin: 32px auto;
+  width: 1120px;
+  background: rgba(112, 112, 112, 0.1);
+  backdrop-filter: blur(25px);
+  border-radius: var(--border-radius);
+  min-height: 860px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 358px;
+  padding: var(--padding-32);
+}
+
+.form-search {
+  position: relative;
+  display: flex;
+  min-width: 506px;
+  height: 48px;
+  padding: var(--padding-12) 0;
+  background: var(--background);
+  border-radius: var(--border-radius);
+  color: var(--color-secondary);
+  gap: var(--gap-16);
+}
+
+.form-search:hover,
+.form-search:focus-within {
+  background: rgba(218, 218, 218, 1);
+}
+
+.form-search__input {
+  width: 434px;
+  height: 24px;
+  padding-left: var(--gap-16);
+}
+
+.form-search__input:focus {
+  outline: none;
+}
+
+.form-search__input::-webkit-search-cancel-button {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.form-search__button-search {
+  cursor: pointer;
+}
+
+.disable {
+  display: none;
+}
+
+.form-search__input,
+.form-search__button-search,
+.form-search__button-clear {
+  background-color: transparent;
+  border: none;
+}
+
+.content {
+  display: flex;
+  gap: var(--gap-16);
+  padding: var(--padding-32);
+}
+
+.current-weather {
+  min-width: 534px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-64);
+  padding: var(--padding-8);
+  font-variant-numeric: lining-nums;
+
+}
+
+.current-weather__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-8);
+}
+
+.current-weather__title {
+  font-size: var(--size-secondary);
+  font-weight: 700;
+  line-height: var(--line-height-secondary);
+}
+
+.current-weather__temp {
+  font-weight: 700;
+  font-size: 112px;
+  line-height: 112px;
+}
+
+.current-weather__info-group {
+  display: flex;
+  gap: var(--gap-8);
+}
+
+.weather-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-16);
+}
+
+.weather-details__card {
+  width: 158px;
+  min-height: 196px;
+  background: var(--background);
+  border-radius: var(--border-radius);
+}
+
