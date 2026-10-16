@@ -5,8 +5,11 @@
   --line-height-primary: 24px;
   --line-height-secondary: 32px;
 
+  --font-variant-numeric: lining-nums;
+
   --color-primary: rgba(245, 244, 244, 1);
   --color-secondary: rgba(112, 112, 112, 1);
+  --color-tertiary: rgba(32, 32, 32, 1);
 
   --border-radius: 8px;
   --background: rgba(245, 244, 244, 0.4);

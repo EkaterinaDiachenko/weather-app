@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./src/styles/fonts/fonts.css" />
     <link rel="stylesheet" href="./src/styles/variables.css" />
     <link rel="stylesheet" href="./src/styles/style.css" />
+    <script src="./src/mock-datas/weather-datas.js"></script>
     <script src="./src/app.js" defer></script>
   </head>
   <body class="page">
@@ -66,16 +67,24 @@
             </div>
           </section>
           <h2 class="visually-hidden">Прогноз погоды других городов</h2>
-          <ul class="weather-details">
-            <li class="weather-details__card"></li>
-            <li class="weather-details__card"></li>
-            <li class="weather-details__card"></li>
-            <li class="weather-details__card"></li>
-            <li class="weather-details__card"></li>
-            <li class="weather-details__card"></li>
-          </ul>
+          <ul class="weather-details"></ul>
         </div>
       </main>
     </div>
   </body>
+
+  <template id="weather-card-template">
+    <li class="weather-details__card">
+      <div class="weather-details__main">
+        <p class="weather-details__title"></p>
+        <img class="weather-details__image" src="" alt="" />
+        <p class="weather-details__value"></p>
+      </div>
+
+      <div class="weather-details__footer">
+        <img class="weather-details__image-bar" src="" alt="" />
+        <div class="weather-details__description"></div>
+      </div>
+    </li>
+  </template>
 </html>
