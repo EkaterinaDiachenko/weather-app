@@ -1,0 +1,13 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Weather application built with HTML, CSS and JavaScript",
+  "scripts": {
+    "prettier": "prettier --write \"**/*.{html,css,js}\"",
+    "prettier:check": "prettier --check \"**/*.{html,css,js}\""
+  },
+  "devDependencies": {
+    "prettier": "3.9.10"
+  }
+}
