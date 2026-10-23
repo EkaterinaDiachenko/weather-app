@@ -4,15 +4,17 @@ const iconSearch = document.querySelector('.form-search__button-search');
 const iconClear = document.querySelector('.form-search__button-clear');
 const weatherDetails = document.querySelector('.weather-details');
 
-const iconsPath = '../src/assets/icons/';
+const iconsPath = './src/assets/icons/';
 
 const templateElement = document.getElementById('weather-card-template');
 
 function toggleSearchButtons() {
-  const hasInput = searchInput.value;
+  const hasText = searchInput.value.trim() !== '';
+  const isFocused = searchInput.matches(':focus');
+  const showClearButton = hasText || isFocused;
 
-  iconSearch.classList.toggle('is-hidden', hasInput);
-  iconClear.classList.toggle('is-hidden', !hasInput);
+  iconSearch.classList.toggle('is-hidden', showClearButton);
+  iconClear.classList.toggle('is-hidden', !showClearButton);
 }
 
 searchInput.addEventListener('input', () => {
@@ -20,13 +22,12 @@ searchInput.addEventListener('input', () => {
   console.log(searchInput.value);
 });
 
-searchInput.addEventListener('focus', () => {
-  iconSearch.classList.add('is-hidden');
-  iconClear.classList.remove('is-hidden');
-});
+searchInput.addEventListener('focus', toggleSearchButtons);
+searchInput.addEventListener('blur', toggleSearchButtons);
 
 iconClear.addEventListener('click', () => {
   searchInput.value = '';
+  searchInput.focus();
   toggleSearchButtons();
 });
 
