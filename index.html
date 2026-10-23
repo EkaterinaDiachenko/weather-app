@@ -16,13 +16,14 @@
     <div class="container">
       <h1 class="visually-hidden">Прогноз погоды</h1>
       <header class="header">
-        <img
-          href="#"
-          src="./src/assets/logo/weather-logo.svg"
-          width="192"
-          height="31"
-          alt="Логотип сервиса погоды"
-        />
+        <a href="#" class="header__logo-link">
+          <img
+            src="./src/assets/logo/weather-logo.svg"
+            width="192"
+            height="31"
+            alt="Логотип сервиса погоды"
+          />
+        </a>
         <form class="form-search" id="form-search">
           <label class="visually-hidden" for="search-city"
             >Поиск по городу</label
@@ -98,32 +99,31 @@
         </div>
       </main>
     </div>
+    <template id="weather-card-template">
+      <li class="weather-details__card">
+        <div class="weather-details__main">
+          <p class="weather-details__title"></p>
+          <img
+            class="weather-details__image"
+            width="32"
+            height="32"
+            src=""
+            alt=""
+          />
+          <p class="weather-details__value"></p>
+        </div>
+
+        <div class="weather-details__footer">
+          <img
+            class="weather-details__image-bar"
+            width="126"
+            height="8"
+            src=""
+            alt=""
+          />
+          <div class="weather-details__description"></div>
+        </div>
+      </li>
+    </template>
   </body>
-
-  <template id="weather-card-template">
-    <li class="weather-details__card">
-      <div class="weather-details__main">
-        <p class="weather-details__title"></p>
-        <img
-          class="weather-details__image"
-          width="32"
-          height="32"
-          src=""
-          alt=""
-        />
-        <p class="weather-details__value"></p>
-      </div>
-
-      <div class="weather-details__footer">
-        <img
-          class="weather-details__image-bar"
-          width="126"
-          height="8"
-          src=""
-          alt=""
-        />
-        <div class="weather-details__description"></div>
-      </div>
-    </li>
-  </template>
 </html>
